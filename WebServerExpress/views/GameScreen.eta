@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <link rel="icon" href="/Images/Images-favicon/favicon.ico"/>
+   <link rel="stylesheet" href="/Css/Common.css"/>
+   <link rel="stylesheet" href="/Css/GameScreen.css"/>
+   <title>Juego</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo-image" src="/Images/Images-logo/1-05.jpg" alt="Imagen de Logo"/>
+       
+            <div class="header-col">
+                <h3>Time Remaining</h3>
+                <p id="time"></p>
+            </div>
+            <div class="header-col">
+                <h3>Current multiplier</h3>
+                <p id='current-multiplier'></p>
+            </div>
+            <div class="header-col">
+                <h3>You're playing as</h3>
+                <p id='player-name'></p>
+            </div>
+
+        <section class= "game-status">
+            <h2 id="whos-turn"></h2>
+        </section>
+        
+        <section>
+            <button id= "btnModalSonido" class="button-tools"> 
+                <img class="tools-image" src="/Images/Images-sound/volume.svg" alt="Imagen de Sonido"/> 
+            </button>
+
+            <div id="tvesModalSonido" class="modalContainer">
+                <div class="modal-content">
+                    <span class="close">×</span> 
+                    <h2>Sonido</h2>
+                    <p>Ajustes de sonido!</p> 
+                </div>
+            </div> 
+
+            <button id= "btnModalAyuda" class="button-tools"> 
+                <img class="tools-image" src="/Images/Images-question/questionBlack.svg" alt="Imagen de Logo"/> 
+            </button>
+
+            <div id="tvesModalAyuda" class="modalContainer">
+                <div class="modal-content">
+                    <span class="close">×</span> 
+                    <h2>Ayuda</h2>
+                    <p>¿Cómo jugar?</p> 
+                </div>
+            </div> 
+
+        </section>
+    </header>
+
+    <main>
+        <aside class = "sidebar">
+            <section class = "score-board">
+                <% /* Usar eta para generar el scoreboard */ %>
+                <h3>Scoreboard</h3>
+                <div class = "team-box">
+
+                    <h4 id="team#1">Team 1: 0 points</h4>
+                    <% it.players.forEach((player) => { %>
+                        <% if(player.id===1) {%>
+                        <div id="<%=`${player.nickname}`%>" class = "player-box">
+                            <img class = "player-image" src="/Images/Images-pokemon/svg/001-aaron.svg" alt = "Player icon"/>
+                            <h4 class="player-name"> <%=`${player.nickname}`%> </h4>
+                            <p id= "score-<%=`${player.nickname}`%>"class="player-score">0 points</p>
+                        </div>
+                        <% } %> 
+                    <%}); %>
+
+                    <h4 id="team#2">Team 2: 0 points</h4>
+                    <% it.players.forEach((player) => { %>
+                        <% if(player.id===2) {%>
+                        <div id="<%=`${player.nickname}`%>" class = "player-box">
+                            <img class = "player-image" src="/Images/Images-pokemon/svg/002-avatar.svg" alt = "Player icon"/>
+                            <h4 class="player-name"> <%=`${player.nickname}`%> </h4>
+                            <p id= "score-<%=`${player.nickname}`%>"class="player-score">0 points</p>
+                        </div>
+                        <% } %> 
+                    <%}); %>              
+            </section>
+            <div class = "deck-box">
+                <button id="deck-cartas" class="deck-button"></button>
+                <div class= "cardZone">
+                </div>
+            </div>
+        </aside>
+
+  <!-- Modal content -->
+ <!-- Trigger/Open The Modal -->
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="closeModal">&times;</span>
+    <p class="mensajeFinal">Finalizo la partida</p>
+  </div>
+
+</div>
+        <table class = "gameboard">
+            
+        </table>
+    </main>
+    <script type="module" src="/Js/Script.js" defer="defer"></script>
+</body>
+</html>

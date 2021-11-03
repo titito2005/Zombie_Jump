@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  background: url(../Images/Images-backgrounds/Endless-Constellation.svg);
+}
+
+header {
+  text-align: center;
+  color: white;
+}
+
+#creditsAuthors {
+  margin-left: 40px;
+  color: white;
+}
+
+.link1 {
+  color: lightblue;
+}
+
+.link2 {
+  color: lightblue;
+}
+
+.link3 {
+  color: lightblue;
+}
+
+.link4 {
+  color: lightblue;
+}

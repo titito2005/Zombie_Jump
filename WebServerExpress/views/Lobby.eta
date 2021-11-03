@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- Esto es un comentario -->
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/Images/Images-favicon/favicon.ico"/>
+    <link rel="stylesheet" href="/Css/Common.css" />
+    <link rel="stylesheet" href="/Css/Lobby.css" />
+
+    <title>Lobby.xhtml</title>
+</head>
+    <body>
+        <header>
+            <img class="logo-image" src="/Images/Images-logo/1-05.jpg" alt="Imagen de Logo"/>
+            <section class= "lobby-details">
+                <h2>Lobby Session ID: <%= `${it.sessionID}` %></h2>
+                <p>(Send this Session ID to the people you want to join the session )</p>
+            </section>
+            
+            <button class="button-tools"> 
+                <img class="tools-image" src="/Images/Images-sound/volume.svg" alt="Imagen de Sonido"/> 
+            </button>
+            <button class="button-tools"> 
+                <img class="tools-image" src="/Images/Images-question/questionBlack.svg" alt="Imagen de Logo"/> 
+            </button>
+        </header>
+        <main>
+            <section class="settings-bar">
+                <h1>Configuración del Juego</h1>
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>
+                                Cantidad de equipos
+                            </th>
+                            <th>
+                                <input type="text" size="2"/>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                Duracion del turno
+                            </th>
+                            <th>
+                                <input type="text" size="2"/>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                El zombie mata si adelanta una ficha de un jugador
+                            </th>
+                            <th>
+                                 <input type="checkbox" checked="checked"/>
+                                 <span class="checkmark"></span>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                El Zombie mata las fichas de los jugadores en la zona segura.
+                            </th>
+                            <th>
+                                <input type="checkbox" checked="checked"/>
+                                <span class="checkmark"></span>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>
+                                Aplicar multiplicador de puntos por llegada de fichas de jugador.
+                            </th>
+                            <th>
+                                <input type="checkbox" checked="checked"/>
+                                <span class="checkmark"></span>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>               
+            </section>            
+             <section class="tittle">
+                <h2>Jugadores</h2>
+                <section class="players-table">
+
+                     <% it.players.forEach((player) => { %>
+                        <% if(player.id == 1) { %>
+                            <div id="<%=`${player.nickname}`%>" class="player-block-blue">
+                                <img class="players-image" src="/Images/Images-pokemon/svg/001-aaron.svg" alt="Imagen de Logo"/>
+                                <h3><%=`${player.nickname}`%></h3>
+                            </div>
+
+                        <% } else if(player.id == 2) { %>
+                            <div id="<%=`${player.nickname}`%>" class="player-block-red">
+                                <img class="players-image" src="/Images/Images-pokemon/svg/002-avatar.svg" alt="Imagen de Logo"/>
+                                <h3><%=`${player.nickname}`%></h3>
+                            </div>
+                        <% } %>
+                      <%}); %>
+
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <button id="start-game" class="button-green"> Start Game </button>
+            <button id="end-session" class="button-red"> End Session </button>
+        </footer>
+        
+        <script type="module" src="/Js/Lobby.js" defer="defer"></script>
+    </body>
+</html>

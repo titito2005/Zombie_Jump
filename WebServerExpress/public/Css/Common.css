@@ -1,0 +1,115 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+th,
+tr {
+  color: white;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: Kanit, sans-serif;
+  background: url(../Images/Images-backgrounds/Endless-Constellation.svg);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*
+AGREGAR A CREDITOS
+<a href='https://www.freepik.es/vectores/personas'>Vector de Personas creado por catalyststuff - www.freepik.es</a>
+*/
+.logo-image {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 150px;
+}
+
+.tools-image {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 150px;
+}
+
+.button-tools {
+  padding: 5px, 5px;
+  border-radius: 150px;
+  background-color: white;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.button-green {
+  display: flex;
+  background-color: #4caf50; /* Green */
+  color: white;
+  padding: 12px 26px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 3px solid #5dc861;
+  box-shadow: 0 5px #999;
+  margin: 10px;
+}
+
+.button-green:hover {
+  background-color: #5dc861;
+}
+
+.button-green:active {
+  box-shadow: 0 3px #666;
+  transform: translateY(5px);
+}
+
+.button-red {
+  display: flex;
+  background-color: #d43c1b;
+  color: white;
+  padding: 12px 26px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 3px solid #f56343;
+  box-shadow: 0 5px #999;
+  margin: 10px;
+}
+
+.button-red:hover {
+  background-color: #f56343;
+}
+
+.button-red:active {
+  box-shadow: 0 3px #666;
+  transform: translateY(5px);
+}

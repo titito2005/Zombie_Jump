@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author" content="DiegoBarquero"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="/Images/Images-favicon/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"/>
+    
+    <link rel="stylesheet"  href="/Css/Home-Page.css"/>
+    <link rel="stylesheet" href="/Css/Common.css" />
+     
+	<title>Home Page</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo-image" src="/Images/Images-logo/1-05.jpg" alt="Imagen de Logo"/>
+        <section class= "game-title">
+            <h2>Zombie Jump</h2>
+        </section>  
+        <div class="buttons">
+        <button class="button-tools"> 
+            <img class="tools-image" src="/Images/Images-sound/volume.svg" alt="Imagen de Sonido"/> 
+        </button>
+        <button class="button-tools"> 
+            <img class="tools-image" src="/Images/Images-question/questionBlack.svg" alt="Imagen de Logo"/> 
+        </button>
+    </div>
+    </header>
+    <main>
+        <img class="player-image" src="/Images/Images-pokemon/svg/001-aaron.svg" alt="Imagen de Logo" width="60"
+             height="60" />
+        <p>
+            You are playing as:
+        </p>
+
+        <section class="form">
+            <label for="nickname">Nickname: </label>
+            <input type="text" name="nickname" id="nickname" required="required" minlength="3"
+                    maxlength="30" placeholder="Enter your NickName!" />
+            <button id="new_create_session" class="button-green">Create Session</button>
+
+            <p>------------ Or -------------</p>
+
+            <label for="sessionId">Session Id: </label>
+            <input type="text" name="sessionId" id="sessionId" pattern="[0-9]{5}" placeholder="Enter Session ID!"/>
+            <button id="new_join_session" class="button-red">Join Session</button>
+        </section>
+
+        <section class="help">
+            <h1>Help</h1>
+            <button class="cancel_button" type="button">x</button>
+            <p>If you want to host a game session, press Create Session</p>
+            <p>If you want to join another game session, paste the Session ID and press Join Session</p>
+        </section>
+
+        <section class="music">
+            <h2>Music Settings</h2>
+            <button class="cancel_button">x</button>
+            <p>sound volume <img src="/Images/Images-sound/music-bar.svg" alt="Imagen Icono#3" width="90" height="40" /></p>
+            <p>music volume <img src="/Images/Images-sound/music-bar.svg" alt="Imagen Icono#3" width="90" height="40" /></p>
+        </section>
+    </main>
+    <footer></footer>
+   
+   <script type="module" src="/Js/HomePage.js" defer="defer"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+tr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.lobby-details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+table {
+  border-spacing: 0 15px;
+  border-collapse: separate;
+}
+
+.settings-bar {
+  text-align: center;
+  padding: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 10px;
+  min-width: 40vh;
+}
+
+.players-table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+}
+
+.players-image {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 150px;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.player-block-blue {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(4, 129, 187);
+  padding: 5px;
+  width: 33vh;
+  height: 13vh;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.player-block-red {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(212, 19, 19);
+  padding: 5px;
+  width: 33vh;
+  height: 13vh;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.form-block {
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.tittle {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
+
+@media (max-width: 610px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .settings-bar {
+    justify-content: center;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .tittle {
+    justify-content: center;
+  }
+}

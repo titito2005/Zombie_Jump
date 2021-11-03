@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64mm"
+   height="64mm"
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg2886"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="red-cell.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2888"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.4467452"
+     inkscape:cx="325.21275"
+     inkscape:cy="183.51538"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2883" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-24.66199,-48.436617)">
+    <g
+       id="g2850"
+       transform="matrix(2,0,0,2,16.66199,40.436617)">
+      <path
+         style="fill:#f78f8f"
+         d="M 20,35.5 C 11.453,35.5 4.5,28.547 4.5,20 4.5,11.453 11.453,4.5 20,4.5 c 8.547,0 15.5,6.953 15.5,15.5 0,8.547 -6.953,15.5 -15.5,15.5 z"
+         id="path2844" />
+      <g
+         id="g2848">
+        <path
+           style="fill:#c74343"
+           d="m 20,5 c 8.271,0 15,6.729 15,15 0,8.271 -6.729,15 -15,15 C 11.729,35 5,28.271 5,20 5,11.729 11.729,5 20,5 M 20,4 C 11.163,4 4,11.163 4,20 4,28.837 11.163,36 20,36 28.837,36 36,28.837 36,20 36,11.163 28.837,4 20,4 Z"
+           id="path2846" />
+      </g>
+    </g>
+  </g>
+</svg>
